@@ -33,20 +33,20 @@ Since the focus of our experiment is on handling tweets with negative emotions, 
 
 ## Project Structure
 
-1.model-training.py # Script for training the empathy classification model//
-2.empathy_model.py # Model definition (Epitome RoBERTa-based classifier)
-3.app.py # Flask application for web interface and model inference
-4.index.html # HTML form for user input (seeker and response)
-5.result.html # HTML page for displaying empathy prediction results
-6.labeled_csv.csv # CSV file containing training data (seeker, response, empathy labels)
-7.empathy_classifier_model.pth # Trained model weights (generated after training)
-8.base-model-no-training.py #Just a simple file for testing the untrained Epitome model, which is separate from the other files, using the same RoBERTa classifier based model, but untrained, it can also be used, and we've done some training on it.
+1. model-training.py # Script for training the empathy classification model
+2. empathy_model.py # Model definition (Epitome RoBERTa-based classifier)
+3. app.py # Flask application for web interface and model inference
+4. index.html # HTML form for user input (seeker and response)
+5. result.html # HTML page for displaying empathy prediction results
+6. labeled_csv.csv # CSV file containing training data (seeker, response, empathy labels)
+7. empathy_classifier_model.pth # Trained model weights (generated after training)
+8. base-model-no-training.py #Just a simple file for testing the untrained Epitome model, which is separate from the other files, using the same RoBERTa classifier based model, but untrained, it can also be used, and we've done some training on it.
 
 ## Data Format
 The labeled_csv.csv file should contain the following columns:
-1.seeker: The seeker's text
-2.response: The response text (may have multiple entries)
-3.label1 and label2: Two annotated empathy labels by group members (used to compute the average for training)
+1. seeker: The seeker's text
+2. response: The response text (may have multiple entries)
+3. label1 and label2: Two annotated empathy labels by group members (used to compute the average for training)
 The responses in the CSV file are split based on numeric markers like 1., 2., etc.
 
 ##  Model Training
