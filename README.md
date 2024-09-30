@@ -33,7 +33,7 @@ Since the focus of our experiment is on handling tweets with negative emotions, 
 
 ## Project Structure
 
-1.model-training.py # Script for training the empathy classification model
+1.model-training.py # Script for training the empathy classification model//
 2.empathy_model.py # Model definition (Epitome RoBERTa-based classifier)
 3.app.py # Flask application for web interface and model inference
 4.index.html # HTML form for user input (seeker and response)
