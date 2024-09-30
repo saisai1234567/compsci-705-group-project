@@ -13,7 +13,7 @@ import torch.optim as optim
 # ----------------------------
 # 加载CSV文件
 
-file_path = r'E:\Study\UoA\705\Epitome\pythonProject\labeled_csv.csv'
+file_path = r'labeled_csv.csv'
 df = pd.read_csv(file_path)
 
 # 初始化空列表，用于存储字典格式的数据
