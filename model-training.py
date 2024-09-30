@@ -118,6 +118,6 @@ def train_model(model, dataloader, criterion, optimizer, num_epochs=5):
         print(f'Epoch {epoch + 1}, Loss: {running_loss / len(dataloader)}')
         # 在所有epoch完成后，保存模型
     torch.save(model.state_dict(), 'empathy_classifier_model.pth')
-    print("模型已保存为 'empathy_classifier_model.pth'")
+    print("The model is saved as 'empathy_classifier_model.pth'")
 # 开始训练
 train_model(model, dataloader, criterion, optimizer, num_epochs=5)
