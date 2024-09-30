@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empathy Prediction</title>
+</head>
+<body>
+    <h2>Empathy level prediction</h2>
+    <form action="/predict" method="post">
+        <label for="seeker_text">Seeker Text:</label><br>
+        <textarea id="seeker_text" name="seeker_text" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="response_text">Response Text:</label><br>
+        <textarea id="response_text" name="response_text" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Predict Empathy Level">
+    </form>
+</body>
+</html>
